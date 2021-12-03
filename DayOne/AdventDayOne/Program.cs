@@ -25,9 +25,9 @@ namespace AdventDayOne
 
         static int PartTwo(string[] input)
         {
-            int previous = 0;
+            int previous = int.MaxValue;
             int total = 0;
-            for (int count = 3; count < input.Length; count++)
+            for (int count = 2; count < input.Length; count++)
             {
                 int first = int.Parse(input[count - 2]);
                 int second = int.Parse(input[count - 1]);
