@@ -45,7 +45,7 @@ namespace AdventDayOne
 
         static void Main(string[] args)
         {
-            string[] inputNumbers = System.IO.File.ReadAllLines(@"C:\Projects\AdventCode\DayOne\input.txt");
+            string[] inputNumbers = System.IO.File.ReadAllLines(@"C:\Projects\AdventCode2021\DayOne\input.txt");
 
             Console.WriteLine("Total Part One: " + PartOne(inputNumbers));
             Console.WriteLine("Total Part Two: " + PartTwo(inputNumbers));
