@@ -22,19 +22,16 @@ namespace AdventDayThree
                     string line;
                     while ((line = sr.ReadLine()) != null)
                     {
-                        int[] bits = line.Select(c => int.Parse(c.ToString())).ToArray();
-
-                        for (int i = 0; i < bits.Length; i++)
+                        for (int i = 0; i < line.Length; i++)
                         {
-                            bitTotals[i] += bits[i];
+                            bitTotals[i] += line[i] == '1' ? 1 : -1;
                         }
-                        counter++;
                     }
                 }
 
                 for (int j = 0; j < bitTotals.Length; j++)
                 {
-                    if (bitTotals[j] >= (counter / 2))
+                    if (bitTotals[j] >= 0)
                     {
                         gammaRate[j] = 1;
                         epsilonRate[j] = 0;
