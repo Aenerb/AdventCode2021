@@ -12,6 +12,7 @@ namespace AdventDayThree
         {
             int[] gammaRate = new int[12];
             int[] epsilonRate = new int[12];
+            // You don't need this. Stop it. Just use the totals and change the gamma rate.
             int[] bitTotals = new int[12] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
             int counter = 0;
 
